@@ -1,0 +1,216 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap");
+@font-face {
+  font-family: "BBBInvader";
+  src: url("../fonts/BBBInvader.otf");
+}
+
+:root {
+  --good: #6dffaf;
+  --bad: #ff6767;
+  --white: #f5fcff;
+}
+
+* {
+  font-family: "Roboto Mono";
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100dvh;
+  background-color: #050009;
+}
+
+h1 {
+  font-size: 28px;
+  font-family: "BBBInvader";
+}
+
+.choose-but {
+  margin: 20px 0;
+}
+
+.buttons {
+  width: 100%;
+}
+
+button,
+a {
+  width: 100%;
+  height: 75px;
+  font-family: "BBBInvader";
+  font-size: 28px;
+  font-weight: bold;
+  outline: none;
+  border: none;
+  border-radius: 4px;
+  background-color: var(--white);
+  transition-duration: 0.1s;
+}
+
+.response {
+  background-color: var(--white);
+  height: 50%;
+  position: relative;
+  padding: 1.5em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  border-radius: 4px;
+  height: 60%;
+  .svg {
+    position: absolute;
+    bottom: 0.3em;
+    right: 0.3em;
+
+    svg {
+      width: 45px;
+    }
+  }
+  .img {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    .img-div {
+      width: 100%;
+      height: 100%;
+      background-size: cover;
+      border-radius: 5px;
+      background-color: #ddf5ff;
+    }
+    .img-text {
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      flex-direction: column;
+    }
+  }
+}
+
+.wrapper {
+  width: 100%;
+  height: 100dvh;
+  padding: 10%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+section {
+  height: calc(100dvh - 20%);
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+}
+
+.naslov {
+  color: var(--white);
+  font-size: 32px;
+  line-height: 87%;
+}
+
+button:disabled {
+  color: #8f989c;
+  background-color: #e5eff3;
+}
+
+button:active {
+  color: #6993a5;
+  background-color: #d8eef7;
+}
+//START PAGE
+
+.form {
+  width: 100%;
+  label {
+    color: var(--white);
+    font-size: 28px;
+  }
+}
+
+select {
+  width: 100%;
+  height: 75px;
+  font-family: "Roboto Mono";
+  font-size: 28px;
+  font-weight: bold;
+  outline: none;
+  border: none;
+  border-radius: 4px;
+  background-color: var(--white);
+  display: flex;
+  flex-direction: column;
+  padding-top: 17px;
+  option {
+    width: 100%;
+    height: 75px;
+  }
+}
+
+.choose-kar {
+  margin: 20px 0;
+}
+
+.main-slika {
+  margin-top: 20px;
+  width: 100%;
+  height: 100%;
+  border-radius: 4px;
+  background-image: url("../images/milic.png");
+  background-size: cover;
+  display: flex;
+  align-items: flex-end;
+  p {
+    text-align: right;
+    color: var(--good);
+    margin: 10px;
+    font-weight: bold;
+    font-size: 30px;
+    text-shadow: 5px 3px 4px rgb(4, 2, 7);
+  }
+}
+
+.black {
+  position: absolute;
+  background-color: #00000081;
+  width: 100%;
+  height: 100vh;
+  display: none;
+  justify-content: center;
+  align-items: center;
+}
+
+.char-list {
+  background-color: var(--white);
+  width: 80%;
+  padding: 2em;
+  border-radius: 4px;
+
+  .close {
+    background-color: var(--bad);
+    color: var(--white);
+    margin-top: 1em;
+  }
+
+  div {
+    display: flex;
+
+    p {
+      font-size: 25px;
+    }
+
+    input {
+      width: 30px;
+      height: 30px;
+      margin: 0.5em;
+    }
+  }
+}
